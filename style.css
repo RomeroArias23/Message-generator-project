@@ -1,15 +1,107 @@
 /*General*/
 
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600&family=Great+Vibes&family=Montserrat:wght@400;600&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+  font-family: 'Belanosima', sans-serif;
+  background-color: #311C3B;
+  color: #EACEE4;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1, select, button, .output {
+  margin: 10px;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+
+/*Phrase zone*/
+.output {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #F5F5B8;
+  color: #F15B29;
+  border-radius: 25px;
+  border-radius: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.output textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #F5F5B8;
+  font-family: 'Belanosima', sans-serif;
+  text-align: center;
+  width: 100%;
+  height: 200px;
+  box-sizing: border-box;
+  font-size: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Buttons*/
+button {
+  background-color: #F15B29;
+  color: #F5F5B8;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #F5F5B8;
+  color: #311C3B;
+
+}
+
+#languageSelect {
+  color: #311C3B;
+  background-color: #EACEE4;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#languageSelect:hover {
+  background-color: #F5F5B8;
+  color: #311C3B;
+}
+
+/*Mobile devices*/
+
+@media (max-width: 800px) {
+  .output textarea {
+    font-size: 1.5em;
   }
-  .container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
+}
+
+@media (max-width: 600px) {
+  .output textarea {
+    font-size: 1em;
   }
-  .output {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
+}
