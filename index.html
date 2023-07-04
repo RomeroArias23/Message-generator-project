@@ -7,18 +7,25 @@
     <link rel="stylesheet" type="text/css" href="./style.css"/> 
     <title>Frases ácidas</title>
 </head>
+
 <body>
   <div class="container">
-    <h1>Random Phrase Generator</h1>
+
+    <h1><span class="typed"></span></h1>
     <select id="languageSelect" onchange="changeLanguage()">
       <option value="english">English</option>
       <option value="spanish">Español</option>
     </select>
+
     <button onclick="generatePhrase()">Generate</button>
     <div class="output">
       <textarea id="phraseOutput" rows="5" cols="50" readonly></textarea>
     </div>
+
   </div>
+
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
         <script src="./index.js"></script>
 </body>
+
 </html>
