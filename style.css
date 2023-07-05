@@ -28,10 +28,10 @@ h1 {
 
 /*Phrase zone*/
 .output {
-  border: 1px solid #ccc;
+  border: 1px solid #311C3B;
   padding: 10px;
   margin-bottom: 10px;
-  background-color: #F5F5B8;
+  background-color: #311C3B;
   color: #F15B29;
   border-radius: 25px;
   border-radius: 25px;
@@ -50,7 +50,8 @@ h1 {
   resize: none;
   padding-left: 10px;
   padding-right: 10px;
-  background-color: #F5F5B8;
+  background-color: #311C3B;
+  color: #F15B29;
   font-family: 'Belanosima', sans-serif;
   text-align: center;
   width: 100%;
@@ -75,7 +76,12 @@ button {
 button:hover {
   background-color: #F5F5B8;
   color: #311C3B;
+}
 
+button:active {
+  background-color: #EACEE4;
+  padding: 8px 18px;
+  border-radius: 3px;
 }
 
 #languageSelect {
